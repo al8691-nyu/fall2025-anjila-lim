@@ -1,41 +1,290 @@
 <!DOCTYPE html>
-<html>
-    <head><title>our little cloister</title>
-    <link rel= stylesheet href="style.css">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our little cloister - menu</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        body {
+            font-family: "Patrick Hand", cursive; 
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            border: 2px solid #333;
+            background: none;
+            font-family: inherit;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #eee;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 2rem;
+            padding: 1rem;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        a { 
+            color: inherit; 
+            text-decoration: none;
+        } 
+
+       main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        .description {
+            max-width: 600px;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+.contact-form {
+            width: 100%;
+            max-width: 800px; 
+        }
+
+        .form-row-split {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+
+        .form-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            font-family: 'Patrick Hand', cursive, sans-serif;
+            font-size: 18px;
+            padding: 10px 12px;
+            border: 2px solid #000;
+            background: transparent;
+            outline: none;
+            width: 100%;
+        }
+
+        .form-row-full {
+            margin-top: 20px;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .btn-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn-submit {
+            background: transparent;
+            font-family: 'Patrick Hand', cursive, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid #000;
+            padding: 8px 50px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #f4f4f4;
+        }
+        footer {
+            padding: 40px 0;
+            border-top: 2px solid #333;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-info p {
+            margin: 5px 0;
+        }
+
+        .footer-contact {
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            nav li {
+                margin-left: 0;
+            }
+
+            h1 {
+                font-size: 36px; 
+            }
+
+            .form-row-split {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .footer-contact {
+                text-align: center;
+            }
+        }
     </style>
+</head>
+<body>
 
-    </head>
+       <header class="container">
+        <div class="logo"><a href="index.html">our little cloister<a></div>
+        <nav>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="events.html">events</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="contactus.html">contact us</a></li>
+            </ul>
+        </nav>
+        <button class="btn"><a href="newsletter.html">join us</a></button>
+    </header>
 
-    <body>
-        <div class="header">
-            <h1><a class="active" href="#home">our little cloister</a></h1>
+    <main class="container">
+        <h1 class="title"><b>reach out to us</b></h1>
+            <p class="description">
+                if you have questions or requests, feel free to contact us using the form below. we will aim to reply in 2 to 3 business days.
+            </p>
 
-        <nav class="topnav-right">
-            <a href="about.html" class="right">about</a>
-            <a href="events.html" class="right">events</a>
-            <a href="menu.html" class="right">menu</a>
-            <a href="contactus.html" class="right">contact</a>
-            <a href="newsletter.html" class="right">join us</a>
-        </nav></div>
-        <div class="main">
-            <br>
-            <h2>reach out to us</h2>
-            <p></p>
+            <form class="contact-form">
+                
+                <div class="form-row-split">
+                    
+                    <div class="form-col">
+                        <div class="form-group">
+                            <input type="text" id="fname" placeholder= "first name" name="fname">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="email" name="email">
+                        </div>
+                    </div>
+
+                    <div class="form-col">
+                        <div class="form-group">
+                            <input type="text" id="lname" placeholder="last name" name="lname">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="phone no. (optional)" name="phone">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-row-full">
+                    <div class="form-group">
+                        <textarea id="message" placeholder="type your message here" name="message"></textarea>
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <button type="button" class="btn-submit">submit</button>
+                </div>
+
+            </form>
+        </main>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+    </main>
+
+    <footer class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>our little cloister</h3>
+                <p>123 ABCD Street</p>
+                <p>City</p>
+                <p>Post Code</p>
             </div>
-
-        <div class="footer">
-         <h3>our little cloister</h3>
-         <p>123 ABCD Street</p> 
-         <p>City</p>  
-         <p>Post Code</p>
-         <p>contact@ourlittlecloister.com</p>
-         <p>(000) 000 000</p>
+            <div class="footer-contact">
+                <p>contact@ourlittlecloister.com</p>
+                <p>(000) 000 000</p>
+            </div>
         </div>
-    </body>
-    
+    </footer>
+
+</body>
 </html>

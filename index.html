@@ -1,56 +1,317 @@
 <!DOCTYPE html>
-<html>
-    <head><title>our little cloister</title>
-    <link rel= stylesheet href="style.css">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our little cloister</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        body {
+            font-family: "Patrick Hand", cursive; 
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 2rem;
+            padding: 1rem;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            border: 2px solid #333;
+            background: none;
+            font-family: inherit;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 2px solid #333;
+        }
+
+        .section-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .section-content:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .text-block {
+            width: 45%;
+        }
+
+        .image-block {
+            width: 45%;
+            height: 300px;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ccc;
+        }
+
+        .image-block svg {
+            width: 50px;
+            height: 50px;
+            fill: #999;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        a { 
+            color: inherit; 
+            text-decoration: none;} 
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .testimonial-grid {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .testimonial-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .testimonial-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            border: 2px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-image svg {
+            width: 40px;
+            height: 40px;
+            fill: #999;
+        }
+
+        .testimonial-item p {
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 40px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-info p {
+            margin: 5px 0;
+        }
+
+        .footer-contact {
+            text-align: right;
+        }
+        
+         @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            nav li {
+                margin-left: 0;
+            }
+
+            .section-content, 
+            .section-content:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-block, .image-block {
+                width: 100%;
+                flex: none;
+            }
+
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+
+            .testimonial-grid {
+                flex-direction: column;
+            }
+
+            .testimonial-item {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .footer-contact {
+                text-align: center;
+            }
+         }
     </style>
+</head>
+<body>
 
-    </head>
+    <header class="container">
+        <div class="logo"><a href="index.html">our little cloister<a></div>
+        <nav>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="events.html">events</a></li>
+                <li><a href="menu.html">menu</a></li>
+                <li><a href="contactus.html">contact us</a></li>
+            </ul>
+        </nav>
+        <button class="btn"><a href="newsletter.html">join us</a></button>
+    </header>
 
-    <body>
-        <div class="header">
-            <h1><a class="active" href="#home">our little cloister</a></h1>
+    <main>
+        <section class="container">
+            <div class="section-content">
+                <div class="text-block">
+                    <h1>connecting others<br>like you, with you</h1>
+                    <p>comfort close to home, where you can find like-minded souls in this increasingly isolating world.</p>
+                </div>
+                <div class="image-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                </div>
+            </div>
+        </section>
 
-        <nav class="topnav-right">
-            <a href="about.html" class="right">about</a>
-            <a href="events.html" class="right">events</a>
-            <a href="menu.html" class="right">menu</a>
-            <a href="contactus.html" class="right">contact</a>
-            <a href="newsletter.html" class="right">join us</a>
-        </nav></div>
-        <div id="main-home">
-            <br>
-            <h2>connecting others like you, with you</h2>
-            <p>comfort close to home, where you can find likeminded souls in this increasingly isolating world</p>
+        <section class="container">
+            <div class="section-content">
+                <div class="image-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                </div>
+                <div class="text-block">
+                    <h2>building community,<br>the way we were meant to</h2>
+                    <p>subscribe to our newsletter to keep up with the latest events and updates on our space!</p>
+                    <button class="btn">join us</button>
+                </div>
             </div>
-        <div id="newsletter-home">
-            <br>
-            <h2>building community, the way we were meant to</h2>
-            <p>subscribe to our newsletter to keep up with the latest events and updates on our space!</p>
+        </section>
+
+        <section class="container">
+            <div class="section-content">
+                <div class="text-block">
+                    <h2>the finest of classics</h2>
+                    <p>our food and drinks are catered to our late-night crowd who are looking to chill and wind down - rather than party the night away.</p>
+                    <button class="btn">menu</button>
+                </div>
+                <div class="image-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                </div>
             </div>
-        <div id="menu-home">
-            <br>
-            <h2>the finest of classics</h2>
-            <p>our food and drinks are catered to our late-night crowd who are looking to chill and wind down - rather than party the night away</p>
+        </section>
+
+        <section class="container testimonials">
+            <h2>notes from our people</h2>
+            <p style="text-align: center; margin-bottom: 40px;">thank you for the kind words</p>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    </div>
+                    <p>customer A</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    </div>
+                    <p>customer B</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    </div>
+                    <p>customer C</p>
+                </div>
             </div>
-        <div id="reviews">
-        <br>
-        <h2>notes from our people</h2>
-        <p>thank you for the kind words</p>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>our little cloister</h3>
+                <p>123 ABCD Street</p>
+                <p>City</p>
+                <p>Post Code</p>
+            </div>
+            <div class="footer-contact">
+                <p>contact@ourlittlecloister.com</p>
+                <p>(000) 000 000</p>
+            </div>
         </div>
+    </footer>
 
-        <div class="footer">
-         <h3>our little cloister</h3>
-         <p>123 ABCD Street</p> 
-         <p>City</p>  
-         <p>Post Code</p>
-         <p>contact@ourlittlecloister.com</p>
-         <p>(000) 000 000</p>
-        </div>
-    </body>
-    
+</body>
 </html>
