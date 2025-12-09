@@ -13,6 +13,10 @@
             background-color: #f9f9f9;
             color: #333;
         }
+        
+        img {
+            border-radius: 10%;
+        }
 
         .container {
             width: 90%;
@@ -28,7 +32,7 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             font-weight: bold;
         }
 
@@ -47,20 +51,27 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            font-size: 1.5rem;
         }
 
         .btn {
             padding: 10px 25px;
-            border: 2px solid #333;
+            border: 2.5px solid #333;
+            border-radius: 5px;
             background: none;
             font-family: inherit;
             font-weight: bold;
+            font-size: 1.3rem;
             cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #eee;
         }
 
         section {
             padding: 60px 0;
-            border-bottom: 2px solid #333;
         }
 
         .section-content {
@@ -75,22 +86,20 @@
 
         .text-block {
             width: 45%;
+            padding-right: 5%;
+            padding-left: 5%;
         }
 
         .image-block {
-            width: 45%;
-            height: 300px;
+            width: 872px;
+            height: 403px;
             background-color: #e0e0e0;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #ccc;
-        }
-
-        .image-block svg {
-            width: 50px;
-            height: 50px;
-            fill: #999;
+            object-fit: fill;
+            margin: auto;
+            background-color:#f9f9f9;
         }
 
         h1 {
@@ -108,45 +117,32 @@
             text-decoration: none;} 
 
         p {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             line-height: 1.6;
             margin-bottom: 25px;
         }
 
         .testimonials h2 {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
         .testimonial-grid {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
 
         .testimonial-item {
-            width: 30%;
+            width: 21.5%;
             text-align: center;
         }
 
         .testimonial-image {
-            width: 100%;
-            height: 200px;
-            background-color: #e0e0e0;
-            border: 2px solid #ccc;
+            width: 250px;
+            height: 250px;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-evenly;
             margin-bottom: 15px;
-        }
-        
-        .testimonial-image svg {
-            width: 40px;
-            height: 40px;
-            fill: #999;
-        }
-
-        .testimonial-item p {
-            font-weight: bold;
         }
 
         footer {
@@ -160,6 +156,8 @@
 
         .footer-info p {
             margin: 5px 0;
+            font-size: 1.3rem;
+            line-height: 1.6;
         }
 
         .footer-contact {
@@ -241,7 +239,7 @@
                     <p>comfort close to home, where you can find like-minded souls in this increasingly isolating world.</p>
                 </div>
                 <div class="image-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    <img src="/assets/hug-woman-composition-vector.jpg" width="750px" height="403px">
                 </div>
             </div>
         </section>
@@ -249,7 +247,7 @@
         <section class="container">
             <div class="section-content">
                 <div class="image-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                    <img src="/assets/hug-friend-composition-vector.jpg" width="750px" height="403px">
                 </div>
                 <div class="text-block">
                     <h2>building community,<br>the way we were meant to</h2>
@@ -267,8 +265,7 @@
                     <button class="btn">menu</button>
                 </div>
                 <div class="image-block">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
-                </div>
+                    <img src="/assets/group-friends-dining-cafe-modern-illustration-2023-vector.jpg" width="750px" height="403px">
             </div>
         </section>
 
@@ -278,21 +275,24 @@
             <div class="testimonial-grid">
                 <div class="testimonial-item">
                     <div class="testimonial-image">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                        <img src="/assets/group-portrait-of-happy-students-flat-cartoon-illustration-vector-2.jpg" width="250px" height="250px">
                     </div>
-                    <p>customer A</p>
+                    <p><b>customer A</b></p>
+                    <p><i>"we finally have a place where we can catch up with each other without having to be in a crowded, noisy place, love it!"</i></p>
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-image">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                        <img src="/assets/group-portrait-of-happy-students-flat-cartoon-illustration-vector-1.jpg" width="250px" height="250px">
                     </div>
-                    <p>customer B</p>
+                    <p><b>customer B</b></p>
+                    <p><i>"just moved into this neighbourhood and stumbled upon 'our little cloister'. it's been a great experience meeting other likeminded people and making connections in this new city."</i></p>
                 </div>
                 <div class="testimonial-item">
                     <div class="testimonial-image">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                        <img src="/assets/group-portrait-of-happy-students-flat-cartoon-illustration-vector-3.jpg" width="250px" height="250px">
                     </div>
-                    <p>customer C</p>
+                    <p><b>customer C</b></p>
+                    <p><i>"we actually met each other at their first friendmaking event and have been coming here weekly ever since, we're so grateful!"</i></p>
                 </div>
             </div>
         </section>

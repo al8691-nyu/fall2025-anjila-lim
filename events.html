@@ -22,10 +22,12 @@
 
         .btn {
             padding: 10px 25px;
-            border: 2px solid #333;
+            border: 2.5px solid #333;
+            border-radius: 5px;
             background: none;
             font-family: inherit;
             font-weight: bold;
+            font-size: 1.3rem;
             cursor: pointer;
             transition: background 0.3s ease;
         }
@@ -42,7 +44,7 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             font-weight: bold;
         }
 
@@ -61,7 +63,9 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            font-size: 1.5rem;
         }
+        
         
         a { 
             color: inherit; 
@@ -79,31 +83,27 @@
         }
 
         .full-width-image {
-            width: 100%;
-            height: 400px;
-            background-color: #e0e0e0;
+            width: 872px;
+            height: 450px;
+            background-color: #f9f9f9;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #ccc;
+            object-fit: fill;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             margin-bottom: 40px;
-        }
-
-        .full-width-image svg {
-            width: 60px;
-            height: 60px;
-            fill: #999;
+            border: 0;
         }
 
         .about-text {
             text-align: center;
             font-size: 1.5rem;
-            font-weight: bold;
         }
 
         footer {
             padding: 40px 0;
-            border-top: 2px solid #333;
         }
 
         .footer-content {
@@ -113,10 +113,14 @@
 
         .footer-info p {
             margin: 5px 0;
+            font-size: 1.3rem;
+            line-height: 1.6;
         }
 
         .footer-contact {
             text-align: right;
+            font-size: 1.3rem;
+            line-height: 1.6;
         }
 
         @media (max-width: 768px) {
@@ -178,14 +182,15 @@
 
     <main class="container">
         <h1 class="title">events</h1>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
-        <div class="about-text">
-            <p>coming soon!</p>
+
+        <div class="full-width-image">
+            <a href="https://www.eventbrite.com/e/friendmaking-christmas-edition-tickets-1977427662369?aff=oddtdtcreator"><img src="/assets/eventbrite.png" width="872px" height="450px"></a>
         </div>
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>       
+ 
     </main>
+
+    
 
     <footer class="container">
         <div class="footer-content">

@@ -1,5 +1,12 @@
 # fall2025-anjila-lim
+
+
 project for coding class - our little cloister
+
+final notes:
+- eventbrite embedding requires https, thus i could only use a screenshot of what it would look like. i did set up an eventbrite page though, which i linked via the image.
+
+////////
 
 option chosen: A
 
